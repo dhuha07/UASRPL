@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pembayaran Pajak</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  .payment-option {
+    margin-bottom: 20px;
+  }
+  .payment-option label {
+    margin-right: 10px;
+  }
+  .payment-option input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .payment-details {
+    margin-bottom: 20px;
+  }
+  .payment-details p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  .btn-pesan {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Checkout Pembayaran</h2>
+  
+  <div class="payment-option">
+    <label for="online-banking">Online Banking:</label>
+    <input type="text" id="online-banking" name="onlinebanking" placeholder="Nama Bank">
+  </div>
+  
+  <div class="payment-option">
+    <label for="card">Credit/Debit Card:</label>
+    <input type="text" id="card" name="cardnumber" placeholder="Nomor Kartu">
+  </div>
+  
+  <div class="payment-option">
+    <label for="paypal">PayPal:</label>
+    <input type="text" id="paypal" name="paypalaccount" placeholder="Email PayPal">
+  </div>
+  
+  <div class="payment-details">
+    <p>Sub-total: Rp. 3.600</p>
+    <p>Biaya Pengiriman: Rp. 12.000</p>
+    <p>Total Pembayaran: Rp. 15.600</p>
+  </div>
+  
+  <button type="submit" class="btn-pesan">Pesan</button>
+</div>
+
+</body>
+</html>
